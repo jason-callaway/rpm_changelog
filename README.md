@@ -3,6 +3,8 @@ rpm_changelog
 
 An example Python XMLRPC program that queries Red Hat Network for an RPM's changelog.
 
+The publicly-accessable RHN API is documented at https://access.redhat.com/site/documentation/en-US/Red_Hat_Network/5.0.0/html/API_Documentation/index.html.
+
 Example:
 ```
 $ python rpm_changelog.py username password rhel-x86_64-server-6 zip

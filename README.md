@@ -3,7 +3,8 @@ rpm_changelog
 
 An example Python XMLRPC program that queries Red Hat Network for an RPM's changelog.
 
-Example:<code>
+Example:
+```
 $ python rpm_changelog.py username password rhel-x86_64-server-6 zip
 Generating package list...
 name: zip
@@ -144,4 +145,4 @@ changelog:
     {   'entry_author': 'Jeff Johnson <jbj@redhat.com>',
         'entry_date': '1998-08-10 12:00:00.0',
         'entry_text': '- build root'}]
-</code>
+```

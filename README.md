@@ -1,12 +1,13 @@
-rpm_changelog
-=============
+satellite_api_examples
+======================
 
-An example Python XMLRPC program that queries Red Hat Network for an RPM's changelog.
+Example Python XMLRPC programs that queries Red Hat Network for fun and profit.
 
 The publicly-accessable RHN API is documented at https://access.redhat.com/site/documentation/en-US/Red_Hat_Network/5.0.0/html/API_Documentation/index.html.
 
 Example:
 ```
+$ python ose_errata.py username password > ose_errata.csv
 $ python rpm_changelog.py username password rhel-x86_64-server-6 zip
 Generating package list...
 name: zip

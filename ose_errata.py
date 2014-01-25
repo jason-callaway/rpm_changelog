@@ -10,32 +10,6 @@ SATELLITE_URL = 'https://' + SATELLITE_FQDN + '/rpc/api'
 client = xmlrpclib.Server(SATELLITE_URL, verbose=0)
 key = client.auth.login(USERNAME, PASSWORD)
 
-#channel_list = []
-#channel_list.append('rhel-x86_64-server-6-ose-1.2-rhc')
-#channel_list.append('rhel-x86_64-server-6-ose-1.2-rhc-debuginfo')
-#channel_list.append('rhel-x86_64-server-6-ose-1.2-infrastructure')
-#channel_list.append('rhel-x86_64-server-6-ose-1.2-infrastructure-debuginfo')
-#channel_list.append('rhel-x86_64-server-6-ose-1.2-jbosseap')
-#channel_list.append('rhel-x86_64-server-6-ose-1.2-jbosseap-debuginfo')
-#channel_list.append('rhel-x86_64-server-6-ose-1.2-node')
-#channel_list.append('rhel-x86_64-server-6-ose-1.2-node-debuginfo')
-#channel_list.append('rhel-x86_64-server-6-ose-2.0-rhc')
-#channel_list.append('rhel-x86_64-server-6-ose-2.0-rhc-debuginfo')
-#channel_list.append('rhel-x86_64-server-6-ose-2.0-infrastructure')
-#channel_list.append('rhel-x86_64-server-6-ose-2.0-infrastructure-debuginfo')
-#channel_list.append('rhel-x86_64-server-6-ose-2.0-jbosseap')
-#channel_list.append('rhel-x86_64-server-6-ose-2.0-jbosseap-debuginfo')
-#channel_list.append('rhel-x86_64-server-6-ose-2.0-node')
-#channel_list.append('rhel-x86_64-server-6-ose-2.0-node-debuginfo')
-#channel_list.append('rhel-x86_64-server-6-osop-1-rhc')
-#channel_list.append('rhel-x86_64-server-6-osop-1-rhc-debuginfo')
-#channel_list.append('rhel-x86_64-server-6-osop-1-infrastructure')
-#channel_list.append('rhel-x86_64-server-6-osop-1-infrastructure-debuginfo')
-#channel_list.append('rhel-x86_64-server-6-osop-1-jbosseap')
-#channel_list.append('rhel-x86_64-server-6-osop-1-jbosseap-debuginfo')
-#channel_list.append('rhel-x86_64-server-6-osop-1-node')
-#channel_list.append('rhel-x86_64-server-6-osop-1-node-debuginfo')
-
 channels = client.channel.listSoftwareChannels(key)
 channel_list = []
 for c in channels:

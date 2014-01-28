@@ -1,6 +1,20 @@
+#!/usr/bin/env python
+"""
+Example script that uses the Satellite XMLRPC API to fetch the list of software
+channels from RHN.
+
+To run:
+$ python rpm_changelog.py RHNusername RHNpassword channelName rpmName
+"""
+
 import xmlrpclib
 import sys
 import pprint
+
+__author__ = 'Jason Callaway'
+__email__ = 'jcallaway@redhat.com'
+__license__ = 'GPL'
+__version__ = '0.1'
 
 USERNAME = sys.argv[1]
 PASSWORD = sys.argv[2]

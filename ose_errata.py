@@ -1,5 +1,20 @@
+#!/usr/bin/env python
+"""
+Example script that uses the Satellite XMLRPC API to fetch the list of software
+channels from RHN.
+
+To run:
+$ python ose_errata.py RHNusername RHNpassword
+"""
+
 import xmlrpclib
 import sys
+
+__author__ = 'Jason Callaway'
+__email__ = 'jcallaway@redhat.com'
+__license__ = 'GPL'
+__version__ = '0.1'
+
 
 USERNAME = sys.argv[1]
 PASSWORD = sys.argv[2]
